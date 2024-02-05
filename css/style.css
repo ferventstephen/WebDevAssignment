@@ -1,62 +1,144 @@
-
-.main-container {
-    display: flex;
-
-   
+*{
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+    overflow: auto;
 }
+  /*this the first grid*/
 .first-grid {
-    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 10px;
     padding: 16px;
-    height: auto;
-    
+    height: auto;  
 }
-@media only screen and (max-width: 500px){
-    .first-grid {
-    
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-        padding: 16px;
-        height: auto;
-    }
-    .second-grid {
-        display: grid;
-        grid-template-columns: 1fr  ;
-        padding: 16px;
-        height: auto;
-    
-    }
-    
-}
+/*this is the second grid*/
 .second-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     padding: 16px;
-    height: auto;
-
+    height: auto; 
 }
 
-img {
-    max-width: 150%;
-    height: 250px;
-    
-}
 .header-container {
     background-color: rgba(42, 130, 165, 0.753);
     display: flex;
     justify-content: space-between;
     margin-left: auto; margin-right: auto;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
+    align-content: space-between;
+    z-index: 999;
+
 }
+
+
 body {
-    background-color: rgba(22, 46, 11, 0.733);
+    background-color: whitesmoke;
+    width: 100%;
+    
     
 }
 .instrument-name{
     display: flex;
+    align-items: center;
     
 }
+.header-container a{
+    color: white;
+    padding: 4px;
+}
+.search-container {
+    display: flex;
+}
+#searchinput{
+    padding: 5px;
+    border: 1px solid #ddd; 
+    border-radius: 3px;
+}
+#searchbutton {
+    padding: 5px 1opx;
+    margin-left: 5px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+
+}
+#searchbutton:hover {
+  background-color: #357ae8;
+}
+/* .first-landingpage{
+    width: 100%;
+    height: 100px;
+   
+} */
+section img{
+    width: 100%;
+    
+}
+.Sax-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid white;
+    margin: 10px;
+}
+
+.product-container {
+    background-color: #ddd;
+    align-content: center;
+    margin-left: auto; margin-right: auto;
+   padding: 15px;
+} 
+.product-container a{
+
+    color: black;
+    align-items: center;
+    padding: 40px;
+}
+
+@media only screen and(max-width: 500px) {
+
+    /*this the first grid*/
+    .first-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      grid-gap: 10px;
+      padding: 16px;
+      height: auto;  
+    }
+    /*this is the second grid*/
+    .second-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      padding: 16px;
+      height: auto; 
+    }
+    .product-container a{
+    
+        color: black;
+        align-items: center;
+        padding: 40px;
+        object-fit: none;
+    }
+    .header-container h1{
+        content: normal;
+    }
+    }
+    
+
+    .form-container {
+    display: block;
+    justify-content: space-around;
+    display: flex;
+    margin-top: auto; margin-bottom: auto;
+    padding: 50px;
+    }
+    .form {
+        border: solid #357ae8;
+        border-radius: 8px;
+        padding: 40px;
+        
+       
+    }
